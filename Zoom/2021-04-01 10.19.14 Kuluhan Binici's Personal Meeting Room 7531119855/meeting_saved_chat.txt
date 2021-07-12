@@ -1,0 +1,3 @@
+10:48:15 From Burak to Everyone : piggyback
+10:50:41 From Kuluhan Binici to Everyone : PROXYLESSNAS: DIRECT NEURAL ARCHITECTURE SEARCH ON TARGET TASK AND HARDWARE
+10:52:42 From Kuluhan Binici to Everyone : DA-NAS: Data Adapted Pruning for Efficient Neural Architecture Search
