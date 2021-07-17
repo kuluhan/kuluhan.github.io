@@ -55,6 +55,11 @@ body{
   text-align: center;
 }
 
+#name_text p{
+  color:white;
+  font-family: varela;
+}
+
 #name_text p:first-child {
   margin-bottom: 0px;
   font-weight: bold;
