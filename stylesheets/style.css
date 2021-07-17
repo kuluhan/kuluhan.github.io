@@ -53,12 +53,10 @@ body{
   width: 100%;
   font-size: 15px;
   text-align: center;
-}
-
-#name_text p{
   color:white;
   font-family: varela;
 }
+
 
 #name_text p:first-child {
   margin-bottom: 0px;
