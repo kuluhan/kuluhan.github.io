@@ -66,6 +66,20 @@ body{
   font-size: 20px;
 }
 
+#name_text i {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.social_media{
+  margin-bottom: 5px;
+}
+
+#email {
+  font-size: 14px;
+}
+
+
 .topnav a {
   float: left;
   display: block;
