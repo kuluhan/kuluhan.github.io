@@ -29,11 +29,20 @@ body{
 	/*transition: visibility 2.0s;*/
 }
 
+.square a {
+  color: white;
+  text-decoration: none;
+}
+.square a:hover {
+  color: rgb(97, 95, 95);
+}
+
 /********************************/
 
 .topnav {
-  position: relative;
-  margin-left: 0pt;
+  position: sticky;
+  /*margin-left: 0;*/
+  width: 100%;
   overflow: hidden;
   background-color: #333;
 }
