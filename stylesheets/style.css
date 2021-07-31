@@ -41,6 +41,8 @@ body{
 /********************************/
 
 .topnav {
+  z-index:1;
+  top: 0;
   position: sticky;
   /*margin-left: 0;*/
   width: 100%;
@@ -193,7 +195,7 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  /*.topnav.responsive {position: sticky;}*/
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
