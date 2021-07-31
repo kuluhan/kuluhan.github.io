@@ -186,6 +186,8 @@ body{
     position: relative;
     margin: auto;
     float: none;
+    overflow: hidden;
+    margin-top: 15px;
   }
   .sections {
     text-align: center;
