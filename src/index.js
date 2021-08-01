@@ -1,14 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+var test = {
+  fontSize:"15px"
+}
+
+
+
+function MyMenu () {
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
+
+  return (
+    <div 
+      className={isActive ? 'topnav responsive':'topnav'} 
+    >
+      <a href="#home" class="active">Home</a>
+      <a href="#publications">Publications</a>
+      <a href="#CV">CV</a>
+      <a href="#" style={test} class="icon" onClick={toggleClass} >&#9776;</a>
+    </div>
+   );
+}  
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+);
+
+ReactDOM.render(
+  <MyMenu />,
+document.getElementById('mynav')
 );
 
 /*
