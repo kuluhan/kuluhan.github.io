@@ -39,17 +39,6 @@ body{
 }
 
 /********************************/
-
-.topnav {
-  z-index:1;
-  top: 0;
-  position: sticky;
-  /*margin-left: 0;*/
-  width: 100%;
-  overflow: hidden;
-  background-color: #333;
-}
-
 .circle {
   height: 170px;
   width: 170px;
@@ -98,7 +87,6 @@ body{
   width:60%;
 }
 */
-
 .sections {
   margin-left: 30pt;
   float: left;
@@ -106,6 +94,15 @@ body{
   color: white;
 }
 
+.topnav {
+  z-index:1;
+  top: 0;
+  position: sticky;
+  /*margin-left: 0;*/
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+}
 
 .topnav a {
   float: left;
