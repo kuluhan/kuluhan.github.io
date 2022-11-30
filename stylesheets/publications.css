@@ -26,11 +26,35 @@ body{
 
 .header{
     color: white;
+    width: 80%;
+    margin-left: 20px;
 }
 
 .li-div-span{
     display:inline-block;
     width:70%;
+}
+
+#chameleon-img{
+    display: inline;
+    float: right;
+    width: 28%;
+    position: relative;
+    background-image: url("../assets/chameleon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+#predfkd-img{
+    display: inline;
+    float: right;
+    width: 28%;
+    position: relative;
+    background-image: url("../assets/pre-dfkd.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
 }
 
 
