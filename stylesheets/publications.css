@@ -91,13 +91,17 @@ a:hover {
 
   .link-div{
     margin:auto;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
   .link-div span:first-child{
     margin-right: 0;
+  }
+
+  .link-div span:nth-last-child(n+1){
+    margin: auto;
   }
 
 }
