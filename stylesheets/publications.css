@@ -11,6 +11,7 @@ body{
 }
 
 .publication{
+    display:flex;
     float: left;
     width: 70%;
     padding: 10px;
@@ -20,43 +21,32 @@ body{
 }
 
 .pub-list{
-    color: white;
-    list-style-type: none;
+  color: white;
+  list-style-type: none;
 }
 
 .header{
-    color: white;
-    width: 80%;
-    margin-left: 20px;
+  color: white;
+  width: 80%;
+  margin-left: 20px;
 }
 
 .li-div-span{
-    display:inline-block;
-    width:70%;
+  display:inline;
+  width:70%;
+  float: left;
+  margin-right: 8px;
 }
 
-#chameleon-img{
-    display: inline;
-    float: right;
-    width: 28%;
-    position: relative;
-    background-image: url("../assets/chameleon.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100px;
+.publication-img{
+  display: inline;
+  float: right;
+  width: 28%;
+  margin-right: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: auto;
 }
-
-#predfkd-img{
-    display: inline;
-    float: right;
-    width: 28%;
-    position: relative;
-    background-image: url("../assets/pre-dfkd.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100px;
-}
-
 
 li div span p:not(:first-child){
     font-size: smaller;
@@ -69,6 +59,47 @@ a{
 
 a:hover {
     color: rgb(97, 95, 95);
+}
+
+@media screen and (max-width: 600px) {
+  .li-div-span{
+    width:80%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  
+  .publication-img{
+    width: 80%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin: auto;
+  }
+
+  .publication{
+    display:flex;
+    flex-direction: column-reverse;
+    float: none;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    /*background: rgba(28, 28, 28, 0.53);*/
+    background: linear-gradient(to bottom, white 0%, white 120px, rgba(28, 28, 28, 0.53) 120px, rgba(28, 28, 28, 0.53) 100%);
+    border-radius: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  .link-div{
+    margin:auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link-div span:first-child{
+    margin-right: 0;
+  }
+
 }
 
 /********************************/
@@ -150,6 +181,7 @@ a:hover {
   }
   
   @media screen and (max-width: 600px) {
+    /*.topnav.responsive {position: sticky;}*/
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
@@ -157,22 +189,7 @@ a:hover {
       float: right;
       display: block;
     }
-    .square{
-      position: relative;
-      margin: auto;
-      float: none;
-      overflow: hidden;
-      margin-top: 15px;
-    }
-    .sections {
-      text-align: center;
-      float: none;
-      margin: auto;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    /*.topnav.responsive {position: sticky;}*/
+
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
