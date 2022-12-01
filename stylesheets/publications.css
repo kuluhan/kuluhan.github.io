@@ -63,6 +63,7 @@ li div span p:not(:first-child){
 }
 
 a{
+    color:rgb(3, 161, 252);
     text-decoration: none;
 }
 
