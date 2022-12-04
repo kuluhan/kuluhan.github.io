@@ -8,6 +8,30 @@
             "code": "NA",
             "link":	"NA",
             "image":"../assets/condensed-guided.png"
+        },
+        {
+            "title": "Chameleon: Dual Memory Replay for Online Continual Learning on Edge Devices",	
+            "authors": ["Shivam Aggarwal", "Kuluhan Binici", "Tulika Mitra"],
+            "venue":"Design, Automation & Test in Europe Conference & Exhibition (DATE 2023)",	
+            "code": "NA",
+            "link":	"NA",
+            "image":"../assets/chameleon.png"
+        },
+        {
+            "title": "Robust and Resource-Efficient Data-Free Knowledge Distillation by Generative Pseudo Replay",	
+            "authors": ["Kuluhan Binici", "Shivam Aggarwal", "Pham Nam Trung", "Tulika Mitra", "Karianto Leman"],
+            "venue":"Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI 2022)",	
+            "code": "https://github.com/kuluhan",
+            "link":	"https://github.com/kuluhan",
+            "image":"../assets/pre-dfkd.png"
+        },
+        {
+            "title": "Preventing Catastrophic Forgetting and Distribution Mismatch in Knowledge Distillation via Synthetic Data",	
+            "authors": ["Kuluhan Binici", "Pham Nam Trung", "Tulika Mitra", "Karianto Leman"],
+            "venue":"IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2022)",	
+            "code": "NA",
+            "link":	"https://github.com/kuluhan",
+            "image":"../assets/WACV-pic.png"
         }
     ]
 }

@@ -117,58 +117,6 @@
                     
                 }
             }
-            /*
-            var res = fetch('http://kuluhan.github.io/publications.tsv')
-                .then(response => response.text())
-                .then(responseText => console.log(responseText))
-
-            var reader = new FileReader(),
-                picker = document.getElementById("picker")
-                list = document.getElementById("csv-list");
-
-            reader.readAsText("publications.csv");
-            reader.onloadend = () => {
-                let csv = reader.result;
-
-                list.innerHTML = "";
-
-                let rows = csv.split("\r\n");
-
-                for(let row of rows){
-                    let cols = row.match(/(?:\"([^\"]*(?:\"\"[^\"]*)*)\")|([^\"\t]+)/g);
-                    if (cols != null){
-                        var li = document.createElement("li");
-                        var div = document.createElement("div");
-                        div.classList.add("publication");
-                        var span1 = document.createElement("span");
-                        span1.classList.add("li-div-span");
-                        span1.innerHTML = "";
-                        span1.innerHTML += "<p><b>" + cols[0] + "</b></p>";
-                        span1.innerHTML += "<p>" + cols[1] + "</p>";
-                        span1.innerHTML += "<p><i>" + cols[2] + "</i></p>";
-                        if (cols[4] != "NA"){
-                            var span1Div = document.createElement("div");
-                            span1Div.classList.add("link-div");
-                            span1Div.innerHTML = "";
-                            if (cols[3] != "NA"){
-                                span1Div.innerHTML += "<span style=\"margin-right: 10px;\"><i class=\"fab fa-github\"></i><span style=\"margin-left: 5px;\"><a href=\"" + cols[3] + "\">Code</a></span></span>";
-                            }
-                            span1Div.innerHTML += "<span><i class=\"fas fa-graduation-cap\"></i><span style=\"margin-left: 5px;\"><a href=\"" + cols[4] + "\">Paper</a></span></span>";
-                            span1.appendChild(span1Div);
-                        }
-                        var span2 = document.createElement("span");
-                        span2.classList.add("publication-img");
-                        span2.style.backgroundImage = "url('" + cols[5] + "')";
-                        
-                        div.appendChild(span1);
-                        div.appendChild(span2);
-                        li.appendChild(div);
-                        list.appendChild(li);
-                    }
-                }
-            }
-            */
-            
         }
     </script>
     </body>
