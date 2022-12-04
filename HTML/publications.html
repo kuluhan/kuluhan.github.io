@@ -83,7 +83,40 @@
     <script type="module">
         import myJson from './publications.json' assert {type: 'json'};
         window.onload = () => {
-            console.log(myJson);
+            var list = document.getElementById("csv-list");
+            list.innerHTML = "";
+            if (myJson != null){
+                for(let row of myJson["papers"]){
+                    var li = document.createElement("li");
+                    var div = document.createElement("div");
+                    div.classList.add("publication");
+                    var span1 = document.createElement("span");
+                    span1.classList.add("li-div-span");
+                    span1.innerHTML = "";
+                    span1.innerHTML += "<p><b>" + row["title"] + "</b></p>";
+                    span1.innerHTML += "<p>" + row["authors"].join(", ") + "</p>";
+                    span1.innerHTML += "<p><i>" + row["venue"] + "</i></p>";
+                    if (row["link"] != "NA"){
+                        var span1Div = document.createElement("div");
+                        span1Div.classList.add("link-div");
+                        span1Div.innerHTML = "";
+                        if (row["code"] != "NA"){
+                            span1Div.innerHTML += "<span style=\"margin-right: 10px;\"><i class=\"fab fa-github\"></i><span style=\"margin-left: 5px;\"><a href=\"" + row["code"] + "\">Code</a></span></span>";
+                        }
+                        span1Div.innerHTML += "<span><i class=\"fas fa-graduation-cap\"></i><span style=\"margin-left: 5px;\"><a href=\"" + row["link"] + "\">Paper</a></span></span>";
+                        span1.appendChild(span1Div);
+                    }
+                    var span2 = document.createElement("span");
+                    span2.classList.add("publication-img");
+                    span2.style.backgroundImage = "url('" + row["image"] + "')";
+                    
+                    div.appendChild(span1);
+                    div.appendChild(span2);
+                    li.appendChild(div);
+                    list.appendChild(li);
+                    
+                }
+            }
             /*
             var res = fetch('http://kuluhan.github.io/publications.tsv')
                 .then(response => response.text())
