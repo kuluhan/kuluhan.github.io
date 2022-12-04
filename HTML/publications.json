@@ -1,0 +1,13 @@
+{
+    "papers":
+    [
+        {
+            "title": "Condensed Data-Guided Privacy-Preserving Knowledge Distillation",	
+            "authors": ["Kuluhan Binici", "Shivam Aggarwal", "Cihan Acar", "Pham Nam Trung", "Karianto Leman", "Gim Hee Lee", "Tulika Mitra"],
+            "venue":"(under review)",	
+            "code": "NA",
+            "link":	"NA",
+            "image":"../assets/condensed-guided.png"
+        }
+    ]
+}
